@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-img {
+    background-image: url('https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+@layer base {
+  body {
+    @apply bg-[#171717] text-teal-300 tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-xl sm:text-5xl md:text-6xl
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply shadow-xl shadow-cyan-400 rounded-full text-sm py-4 px-2 uppercase bg-gradient-to-r from-[#4f4aee] to-[#e01ac2] text-white
+  }
+
+  button:hover {
+    @apply rounded-full text-black text-sm font-bold py-4 px-2 bg-gradient-to-r from-[#841ce5] to-[#3cf4d8] shadow-[#c1df19]
+  }
+  
+}
+
+
+
+.custom > *:hover {
+    cursor: pointer;
+    font-size: 12px;
+    background: linear-gradient(to right, #9333ea 26.71%, #5eead4 94.36%);
+    box-shadow: 0px 20px 24px 3px rgb(251, 161, 40, 0.42  );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 3px;
+    border-radius: 10%;
+    transform: scale(2);
+}
+
+.custom-mobile>*:hover {
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #9333ea 26.71%, #5eead4 94.36%);
+    box-shadow: 0px 20px 24px 3px rgb(251, 161, 40, 0.42  );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding:0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    transform: scale(2);
+    text-align: right;
+}
+
+
+.i-icons > *:hover {
+    transform: scale(1.9);
+    background: linear-gradient(to right, #9333ea 26.71%, #5eead4 94.36%);
+    box-shadow: 0px 20px 24px 3px rgb(251, 161, 40, 0.42  );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.reflect {
+  -webkit-box-reflect: below 2px linear-gradient(transparent, rgb(255, 255, 255, 0.8));
+}
+
+
+
+
+
+  
